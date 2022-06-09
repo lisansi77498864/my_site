@@ -10,4 +10,5 @@ urlpatterns = [
     path('<int:year>/<int:month>/<int:day>/<slug:post>',
          views.post_detail,
          name='post_detail'),
+    path('check_email', views.check_email, name='check_email'),
 ]
